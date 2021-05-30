@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:fontFamily="Poppins"
+        android:gravity="center"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/black"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/planing_tools"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/main_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/checkList_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@drawable/item_background">
+
+            <ImageView
+                android:id="@+id/list_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_check_list_item_1"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/list_2"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_17sdp"
+                android:src="@drawable/ic_rectangle"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/list_1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="Poppins"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/list_2"
+                android:text="@string/checklist"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/guestsList_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@drawable/item_background">
+
+            <ImageView
+                android:id="@+id/list_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp"
+                android:src="@drawable/ic_guests"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/list_4"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_17sdp"
+                android:src="@drawable/ic_rectangle"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/list_3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="Poppins"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/list_4"
+                android:text="@string/guests_list"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/guestLandingPage_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@drawable/item_background">
+
+            <ImageView
+                android:id="@+id/list_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp"
+                android:src="@drawable/ic_landing_page"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/list_6"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_17sdp"
+                android:src="@drawable/ic_rectangle"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/list_5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="Poppins"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/list_6"
+                android:text="@string/guest_landing_page"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/manageQuotations_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:background="@drawable/item_background">
+
+            <ImageView
+                android:id="@+id/list_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp"
+                android:src="@drawable/ic_manage"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/list_8"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_17sdp"
+                android:src="@drawable/ic_rectangle"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/list_7"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="Poppins"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/list_8"
+                android:text="@string/manage_quotations"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/selectedVendors_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_1sdp"
+            android:background="@drawable/item_background">
+
+            <ImageView
+                android:id="@+id/list_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp"
+                android:src="@drawable/ic_vendors"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/list_10"
+                android:layout_width="@dimen/_2sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_17sdp"
+                android:src="@drawable/ic_rectangle"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/list_9"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="Poppins"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/list_10"
+                android:text="@string/selected_vendors"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cancel_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_close"/>
+</LinearLayout>

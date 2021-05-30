@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tmmim Design</string>
+    <string name="planing_tools">Planing Tools</string>
+    <string name="checklist">Check List</string>
+    <string name="guests_list">Guest List</string>
+    <string name="guest_landing_page">Guest Landing Page</string>
+    <string name="manage_quotations">Manage Quotations</string>
+    <string name="selected_vendors">Selected Vendors</string>
+    <string name="check_your_availability_date_from_here">Check your availability date from here</string>
+</resources>
