@@ -21,11 +21,11 @@ class PriceRangeSeekBar : AppCompatActivity() {
         rubberRangePicker.setCurrentStartValue(startThumbValue + 10)
         val endThumbValue = rubberRangePicker.getCurrentEndValue()
         rubberRangePicker.setCurrentEndValue(endThumbValue + 10)
-        rubberRangePicker.setOnRubberRangePickerChangeListener(object: RubberRangePicker.OnRubberRangePickerChangeListener{
-            override fun onProgressChanged(rangePicker: RubberRangePicker, startValue: Int, endValue: Int, fromUser: Boolean) {}
-            override fun onStartTrackingTouch(rangePicker: RubberRangePicker, isStartThumb: Boolean) {}
-            override fun onStopTrackingTouch(rangePicker: RubberRangePicker, isStartThumb: Boolean) {}
-        })
+//        rubberRangePicker.setOnRubberRangePickerChangeListener(object: RubberRangePicker.OnRubberRangePickerChangeListener{
+//            override fun onProgressChanged(rangePicker: RubberRangePicker, startValue: Int, endValue: Int, fromUser: Boolean) {}
+//            override fun onStartTrackingTouch(rangePicker: RubberRangePicker, isStartThumb: Boolean) {}
+//            override fun onStopTrackingTouch(rangePicker: RubberRangePicker, isStartThumb: Boolean) {}
+//        })
 
         rubberRangePicker.setOnRubberRangePickerChangeListener(object: RubberRangePicker.OnRubberRangePickerChangeListener{
             override fun onProgressChanged(rangePicker: RubberRangePicker, startValue: Int, endValue: Int, fromUser: Boolean) {

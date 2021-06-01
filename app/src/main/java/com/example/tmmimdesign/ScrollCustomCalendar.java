@@ -3,6 +3,7 @@ package com.example.tmmimdesign;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import pl.rafman.scrollcalendar.ScrollCalendar;
 import pl.rafman.scrollcalendar.contract.DateWatcher;
@@ -17,11 +18,12 @@ public class ScrollCustomCalendar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scroll_custom_calendar);
         ScrollCalendar scrollCalendar = (ScrollCalendar) findViewById(R.id.scrollCalendar);
+
         scrollCalendar.setOnDateClickListener(new OnDateClickListener() {
             @Override
             public void onCalendarDayClicked(int year, int month, int day) {
                 // user clicked on a specific date on the calendar
-
+                Toast.makeText(ScrollCustomCalendar.this, day+"-"+month+"-"+year, Toast.LENGTH_SHORT).show();
 
             }
         });

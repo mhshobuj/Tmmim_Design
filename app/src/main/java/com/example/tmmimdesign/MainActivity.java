@@ -9,7 +9,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button custom_calendar, scroll_custom_calendar, custom_price_range_bar, planning_tools_UI;
+    private Button custom_calendar, scroll_custom_calendar, custom_price_range_bar, planning_tools_UI,
+    password_pattern;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         scroll_custom_calendar = findViewById(R.id.scroll_custom_calendar);
         custom_price_range_bar = findViewById(R.id.custom_price_range_bar);
         planning_tools_UI = findViewById(R.id.planning_tools_UI);
+        password_pattern = findViewById(R.id.password_pattern);
 
         custom_calendar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         custom_price_range_bar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, PriceRangeSeekBar.class);
+                Intent intent = new Intent(MainActivity.this, RangeSeekBar.class);
                 startActivity(intent);
             }
         });
@@ -48,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, PlaningToolsUI.class);
+                startActivity(intent);
+            }
+        });
+
+        password_pattern.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PasswordPattern.class);
                 startActivity(intent);
             }
         });

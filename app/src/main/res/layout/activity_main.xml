@@ -54,5 +54,16 @@
         android:textColor="@color/white"
         android:layout_marginTop="10dp"
         android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/password_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="Poppins"
+        android:textSize="@dimen/_16sdp"
+        android:background="@drawable/rectangle"
+        android:text="Password Pattern"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"/>
 
 </LinearLayout>
