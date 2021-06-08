@@ -10,7 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button custom_calendar, scroll_custom_calendar, custom_price_range_bar, planning_tools_UI,
-    password_pattern;
+    password_pattern, noviscore_login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         custom_price_range_bar = findViewById(R.id.custom_price_range_bar);
         planning_tools_UI = findViewById(R.id.planning_tools_UI);
         password_pattern = findViewById(R.id.password_pattern);
+        noviscore_login = findViewById(R.id.noviscore_login);
 
         custom_calendar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +59,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, PasswordPattern.class);
+                startActivity(intent);
+            }
+        });
+
+        noviscore_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, NoviscoreLoginUI.class);
                 startActivity(intent);
             }
         });

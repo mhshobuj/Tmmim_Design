@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TmmimDesign"
         tools:replace="android:appComponentFactory">
-        <activity android:name=".PasswordPattern"></activity>
+        <activity android:name=".NoviscoreLoginUI"></activity>
+        <activity android:name=".PasswordPattern" />
         <activity android:name=".RangeSeekBar" />
         <activity android:name=".PriceRangeSeekBar" />
         <activity android:name=".ScrollCustomCalendar" />

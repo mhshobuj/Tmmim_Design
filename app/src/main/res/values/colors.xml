@@ -11,4 +11,7 @@
     <color name="bar_line_color">#e8d0d2</color>
     <color name="CalendarBackGround">#8D131E</color>
     <color name="text_color">#8D131E</color>
+    <color name="button_background_color">#00a9bf</color>
+    <color name="of_white">#ededed</color>
+    <color name="red">#FF1100</color>
 </resources>

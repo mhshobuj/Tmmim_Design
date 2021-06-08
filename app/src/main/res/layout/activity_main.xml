@@ -66,4 +66,16 @@
         android:layout_marginTop="10dp"
         android:textAllCaps="false"/>
 
+    <Button
+        android:id="@+id/noviscore_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="Poppins"
+        android:textSize="@dimen/_16sdp"
+        android:background="@drawable/rectangle"
+        android:text="Noviscore UI"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"/>
+
 </LinearLayout>

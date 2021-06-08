@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoviscoreLoginUI">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="#F4EFEF"/>
+
+    <ImageView
+        android:layout_below="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:gravity="center"
+        android:src="@drawable/noviscore_background"/>
+
+    <ImageView
+        android:id="@+id/logo_IV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_80sdp"
+        android:paddingRight="@dimen/_80sdp"
+        android:src="@drawable/ic_logobasline"/>
+
+    <RelativeLayout
+        android:layout_below="@id/logo_IV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:background="@color/white"
+        android:elevation="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_20sdp">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="@dimen/_10sdp"
+       android:layout_marginRight="@dimen/_10sdp">
+
+       <RelativeLayout
+           android:id="@+id/header1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_30sdp"
+           android:layout_marginLeft="@dimen/_3sdp">
+
+           <ImageView
+               android:id="@+id/iv_music_1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_music_icon" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_4sdp"
+               android:fontFamily="@font/playfair_display_black"
+               android:text="Login"
+               android:textColor="@color/button_background_color"
+               android:textSize="@dimen/_14ssp"
+               android:layout_marginLeft="-6dp"
+               android:layout_toRightOf="@+id/iv_music_1" />
+
+       </RelativeLayout>
+
+       <Button
+           android:id="@+id/discover_without_acc_btn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/header1"
+           android:layout_marginStart="@dimen/_10sdp"
+           android:layout_marginTop="@dimen/_8sdp"
+           android:layout_marginEnd="@dimen/_10sdp"
+           android:background="@color/button_background_color"
+           android:drawableEnd="@drawable/ic_arrowbutton_white"
+           android:fontFamily="@font/lato_regular"
+           android:padding="@dimen/_10sdp"
+           android:text="Discover without account"
+           android:textAllCaps="false"
+           android:textColor="@color/white"
+           android:textSize="@dimen/_13ssp"
+           android:drawableRight="@drawable/ic_arrowbutton_white"
+           android:paddingRight="@dimen/_20sdp"
+           android:gravity="start"
+           android:paddingEnd="@dimen/_20sdp" />
+
+       <Button
+           android:id="@+id/create_acc_btn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/discover_without_acc_btn"
+           android:layout_marginStart="@dimen/_10sdp"
+           android:layout_marginTop="@dimen/_8sdp"
+           android:layout_marginEnd="@dimen/_10sdp"
+           android:background="@color/button_background_color"
+           android:fontFamily="@font/lato_regular"
+           android:padding="@dimen/_8sdp"
+           android:text="Create an account"
+           android:textAllCaps="false"
+           android:textColor="@color/white"
+           android:textSize="@dimen/_13ssp"
+           android:drawableRight="@drawable/ic_arrowbutton_white"
+           android:paddingRight="@dimen/_20sdp"
+           android:gravity="start"
+           android:paddingEnd="@dimen/_20sdp" />
+
+       <RelativeLayout
+           android:id="@+id/header2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/create_acc_btn"
+           android:layout_marginTop="@dimen/_35sdp"
+           android:layout_marginLeft="@dimen/_3sdp">
+
+           <ImageView
+               android:id="@+id/iv_music_2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_music_icon" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_4sdp"
+               android:fontFamily="@font/playfair_display_black"
+               android:text="Log on to"
+               android:textColor="@color/button_background_color"
+               android:textSize="@dimen/_15ssp"
+               android:layout_marginLeft="@dimen/_minus5sdp"
+               android:layout_toRightOf="@+id/iv_music_2" />
+
+
+       </RelativeLayout>
+
+       <EditText
+           android:id="@+id/login_email_address_et"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/header2"
+           android:layout_marginStart="@dimen/_10sdp"
+           android:layout_marginTop="@dimen/_3sdp"
+           android:layout_marginEnd="@dimen/_10sdp"
+           android:layout_marginBottom="@dimen/_3sdp"
+           android:background="@color/of_white"
+           android:fontFamily="@font/lato_regular"
+           android:hint="Username or email address"
+           android:inputType="textEmailAddress"
+           android:padding="@dimen/_10sdp" />
+
+       <EditText
+           android:id="@+id/login_pass_et"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/login_email_address_et"
+           android:layout_marginStart="@dimen/_10sdp"
+           android:layout_marginTop="@dimen/_3sdp"
+           android:layout_marginEnd="@dimen/_10sdp"
+           android:layout_marginBottom="@dimen/_3sdp"
+           android:background="@color/of_white"
+           android:fontFamily="@font/lato_regular"
+           android:hint="Password"
+           android:inputType="textPassword"
+           android:padding="@dimen/_10sdp" />
+
+       <Button
+           android:id="@+id/login_btn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/login_pass_et"
+           android:layout_marginStart="@dimen/_10sdp"
+           android:layout_marginTop="@dimen/_8sdp"
+           android:layout_marginEnd="@dimen/_10sdp"
+           android:background="@color/red"
+           android:drawablePadding="@dimen/_8sdp"
+           android:fontFamily="@font/lato_regular"
+           android:padding="@dimen/_8sdp"
+           android:text="Login"
+           android:textAllCaps="false"
+           android:textColor="@color/white"
+           android:textSize="@dimen/_13ssp"
+           android:drawableRight="@drawable/ic_arrowbutton_white"
+           android:paddingRight="@dimen/_20sdp"
+           android:gravity="start"
+           android:paddingEnd="@dimen/_20sdp" />
+
+       <TextView
+           android:id="@+id/forgot_pass_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/login_btn"
+           android:layout_centerInParent="true"
+           android:layout_marginTop="@dimen/_18sdp"
+           android:fontFamily="@font/lato_regular"
+           android:text="Forgot your password?"
+           android:textColor="@color/black"
+           android:textSize="@dimen/_15ssp" />
+
+   </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
